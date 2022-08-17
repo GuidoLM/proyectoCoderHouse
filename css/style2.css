@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Generales: Aquí está el formato general de la página que incluye el color de fondo, tamaño, estilo y color de fuente */
+
+.fondo {
+  color: rgba(0, 0, 0, 0.874);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(254, 93, 0);
+  font-size: medium;
+}
+
+.br {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.padreGrid {
+  display: grid;
+  grid-area: 
+  "header nav"
+  "main main"
+  "s1 s2"
+  "s3 s3"
+  "footer footer";
+}
+
+header{
+  background-color: rgb(124, 92, 92);
+  grid-area: header;
+}
+
+nav{
+  background-color: rgb(125, 52, 52);
+  grid-area: nav;
+}
+
+main {
+  background-color: rgb(41, 122, 56);
+  grid-area: cabeza;
+}
+
+
+footer{
+  background-color: rgb(34, 50, 109);
+  grid-area: footer;
+}
+
+/* Formato de secciones */
+
+/* Header: Organización del menú de navegación y logo de la web */
+
+.menu {
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  left: 25.5%;
+  background-color: white;
+}
+
+.inline {
+  display: inline;
+  position: relative;
+  left: 9%;
+  margin-right: 15px;
+  list-style-type: none;
+}
+
+/* Main: La alinación y formato de los elementos principales de la página */
+
+h2 {
+  color: orangered;
+  margin-left: 9%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.cuerpo {
+  margin-left: 20.5%;
+  margin-bottom: 20px;
+}
+
+.cuerpoSecundario {
+  margin-left: 90px;
+  margin-top: 10px;
+}
+
+/* Tengo el presentimiento que me pueden pedir que me use una sola unidad de medida en margin o por "clase" pero decidí avanzar usando los margin left en su mayoría de forma porcentual por facilidad para alinearlos mientras que los valores verticales sin los indiqué en pixeles porque no tengo ninguna alineación vertical  */
+
+.contenedor {
+  width: 350px;
+  margin: 10px 80px 20px 35%;
+  padding: 10px 50px 10px 50px;
+  border: 4px orangered dotted;
+}
+
+.categoria {
+  width: 74%;
+  height: 100px;
+  padding: 20px 0px;
+  border: 4px orangered dotted;
+  position: relative;
+  background-image: url(../img/categorias.png);
+  background-repeat: no-repeat;
+}
+
+.lista {
+  width: 100px;
+  height: 50px;
+  display: inline-block;
+  font-size: large;
+  margin-left: 170px;
+  margin-right: 170px;
+  color: black;
+}
+
+/* footer: Formato para el pie de página, hice uso de ID acá solo para intentar utilizar todas las herramientas disponibles, después de la entrega se va a convertir en .pie" */
+#pie {
+  text-align: center;
+  width: 300px;
+  margin-left: 40%;
+  color: rgba(0, 0, 0, 0.6);
+}

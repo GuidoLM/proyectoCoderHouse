@@ -1,0 +1,420 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*FORMATOS GENERALES */
+/* LINEA 8 A LA 22 */
+.fondo {
+  color: rgba(0, 0, 0, 0.874);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(254, 93, 0);
+  font-size: medium;
+}
+
+.br {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.encabezado {
+  width: 50%;
+  height: 200px;
+  background-image: url(../img/Mega.JPG);
+}
+
+.menu{
+  width: 50%;
+}
+
+/* FIN DE FORMATOS GENERALES */
+
+/* INICIO DEL GRID */
+/* LINEA 30 A LA */
+
+/* INDEX */
+.padreGrid {
+  display: grid;
+  grid-template-areas:
+    "header header nav nav"
+    "main main main main"
+    "s1 s1 s2 s2"
+    "s3  s3 s3 s3"
+    "footer footer footer footer";
+}
+
+/* +CASA y TRUENO  */
+.marcasGrid {
+  display: grid;
+  grid-template-areas:
+  "header header nav nav"
+  "main main main main"
+  "marca1 marca1 marca1 marca1"
+  "footer footer footer footer";
+
+}
+
+/* DESCUENTOS */
+
+.descuentosGrid {
+  display: grid;
+  grid-template-areas:
+  "header header nav nav"
+  "main main main main"
+  "footer footer footer footer";
+}
+
+/* CATEGORIA */
+.categoriasGrid {
+  display: grid;
+  grid-template-areas:
+  "header header nav nav"
+  "main main main main"
+  "footer footer footer footer";
+}
+
+/* AYUDA: Esto no es solo un desesperado grito de socorro de mi parte, sino que también es el nombre de la sección */
+.ayudaGrid {
+  display: grid;
+  grid-template-areas:
+  "header header nav nav"
+  "main main main main"
+  "footer footer footer footer";
+}
+
+/* GRID AREAS GLOBALES */
+
+header {
+  grid-area: header;
+  width: 500px;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* GRID AREAS POR PÁGINAS */
+
+/* INDEX */
+.s1 {
+  grid-area: s1;
+}
+
+.s2 {
+  grid-area: s2;
+}
+
+.s3 {
+  grid-area: s3;
+}
+
+/* MARCAS */
+.marca1 {
+  grid-area: marca1;
+}
+
+/* FIN DEL GRID */
+
+/* FLEX EN SECCIONES */
+
+/* FLEX INDEX */
+.flexPadre {
+  display: flex;
+  flex-flow: row wrap;
+  height: 700px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.titulo {
+  width: 100%;
+}
+
+.p1 {
+  background-color: #be8c52;
+  border: 2px dotted #322737cb;
+  border-radius: 10px;
+  height: 200px;
+  width: 200px;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.p2 {
+  background-color: #be8c52;
+  border: 2px dotted #322737cb;
+  border-radius: 10px;
+  height: 200px;
+  width: 200px;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.p3 {
+  background-color: #be8c52;
+  border: 2px dotted #322737cb;
+  border-radius: 10px;
+  height: 200px;
+  width: 200px;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.p4 {
+  background-color: #be8c52;
+  border: 2px dotted #322737cb;
+  border-radius: 10px;
+  height: 200px;
+  width: 200px;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.p5 {
+  background-color: #be8c52;
+  border: 2px dotted #322737cb;
+  border-radius: 10px;
+  height: 200px;
+  width: 200px;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.p6 {
+  background-color: #be8c52;
+  border: 2px dotted #322737cb;
+  border-radius: 10px;
+  height: 200px;
+  width: 200px;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+/* FIN FLEX INDEX */
+
+/* FLEX MARCAS */
+.marca1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 3%;
+}
+
+.logo {
+  width: 40%;
+  margin-bottom: 20px;
+}
+
+.descripcion {
+  width: 45%;
+  border: 3px dotted orangered;
+  margin-bottom: 20px;
+}
+
+.descripcion2 {
+  width: 40%;
+  border: 3px dotted orangered;
+  margin-bottom: 20px;
+}
+
+.video {
+  width: 45%;
+  margin-bottom: 20px;
+}
+/* FIN FLEX MARCAS */
+
+/* FLEX AYUDA */
+.ayudaFlex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.tituloAyuda {
+  width: 100%;
+}
+
+.contenedor {
+  margin: 10px 35% 20px 35%;
+  border: 4px orangered dotted;
+}
+/* FIN FLEX AYUDA */
+
+/* FLEX CATEGORIAS */
+.categoria {
+  width: 74%;
+  padding: 20px 0px;
+  border: 4px orangered dotted;
+  position: relative;
+  background-image: url(../img/categorias.png);
+  background-repeat: cover;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 10px;
+
+}
+
+.hijo1{
+  width: 50%;
+}
+
+.hijo2{
+  width: 50%;
+  border: 2px solid;
+}
+/* FIN FLEX CATEGORÍA */
+
+/* FLEX S */
+.papaS {
+  width: 170%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.s1{
+  /* border: 2px solid; */
+  width: 40%;
+}
+
+.s2{
+  /* border: 2px solid; */
+  width: 40%;
+}
+/* FIN FLEX S */
+
+/* FIN FLEX */
+
+/* FORMATOS */
+/* FORMATO DEL MENÚ DE NAVEGACIÓN */
+
+
+.inline {
+  display: inline-block;
+  margin-right: 15px;
+  list-style-type: none;
+}
+
+/* FORMATO DE SECCIONES */
+/* Elementos principales del sitio */
+
+h2 {
+  color: orangered;
+  margin-left: 9%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.cuerpo {
+  margin-left: 20.5%;
+  margin-bottom: 20px;
+}
+
+.cuerpoSecundario {
+  width: 50%;
+  margin-left: 40%;
+  margin-top: 10px;
+}
+
+.lista {
+  width: 100px;
+  height: 50px;
+  display: inline-block;
+  font-size: large;
+  margin-left: 170px;
+  margin-right: 170px;
+  color: black;
+}
+
+/* ESTRUCTURACIÓN MOBILE */
+
+@media (max-width: 768px) {
+  .padreGrid {
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+  }
+
+  .s1 {
+    display: none;
+  }
+
+  .s2 {
+    display: none;
+  }
+
+  .s3 {
+    display: none;
+  }
+
+  .ayudaGrid {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+  }
+
+  .marcasGrid {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav"
+      "marca1"
+      "footer";
+  }
+
+  .marca1 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:center;
+    gap: 3%;
+  }
+
+  .main {
+    display: none;
+  }
+
+  .descuentosGrid {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+  }
+
+  .categoriasGrid {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+  }
+}
+
+@media (max-width: 970px) {
+  .contenedor {
+    width: 30%;
+    border: none;
+  }
+}
