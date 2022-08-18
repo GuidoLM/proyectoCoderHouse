@@ -8,6 +8,7 @@
 .a1{
   background-color: aqua;
   transition: all 2s;
+  transform: translate(0rem, 2rem)
 }
 
 .a1:hover{
@@ -17,7 +18,6 @@
 @keyframes aparicion {
   0% {
       opacity: 0%;
-      transform: translate(0rem, 2rem);
   }
   100% {
       opacity: 100%;
@@ -27,14 +27,16 @@
 
 .a2{
   animation-name: aparicion;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-iteration-count: initial;
 }
 
 @keyframes aparicion2 {
   0% {
-      opacity: 10%;
-      transform: translate(0rem, 2rem);
+    opacity: 0%;
+}
+  12% {
+      opacity: 0%;
   }
   100% {
       opacity: 100%;
@@ -44,8 +46,59 @@
 
 .a3{
   animation-name: aparicion2;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-iteration-count: initial;
+}
+
+@keyframes aparicion3 {
+  0% {
+    opacity: 0%;
+}
+  24% {
+      opacity: 0%;
+  }
+  100% {
+      opacity: 100%;
+      transform: translate(0rem, 0px);
+  }
+}
+
+.a4{
+  animation-name: aparicion3;
+  animation-duration: 3s;
+  animation-iteration-count: initial;
+}
+
+@keyframes aparicion4 {
+  0% {
+    opacity: 0%;
+}
+  48% {
+      opacity: 0%;
+  }
+  100% {
+      opacity: 100%;
+      transform: translate(0rem, 0px);
+  }
+}
+
+.a5{
+  animation-name: aparicion4;
+  animation-duration: 3s;
+  animation-iteration-count: initial;
+}
+
+
+.gra {
+  background: linear-gradient(to right, rgb(0, 8, 255), rgba(17, 17, 114, 0.618));
+}
+
+.ab {
+  background-color: rgba(17, 17, 114, 0.618);
+}
+
+.ab:hover{
+  transform: scale(1.5, 1.5);
 }
 
 /*FORMATOS GENERALES */
@@ -317,10 +370,6 @@ footer {
   width: 50%;
 }
 
-.hijo2{
-  width: 50%;
-  border: 2px solid;
-}
 /* FIN FLEX CATEGORÍA */
 
 /* FLEX S */
