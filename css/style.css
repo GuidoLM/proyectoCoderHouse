@@ -31,6 +31,23 @@
   animation-iteration-count: initial;
 }
 
+@keyframes aparicion2 {
+  0% {
+      opacity: 10%;
+      transform: translate(0rem, 2rem);
+  }
+  100% {
+      opacity: 100%;
+      transform: translate(0rem, 0px);
+  }
+}
+
+.a3{
+  animation-name: aparicion2;
+  animation-duration: 5s;
+  animation-iteration-count: initial;
+}
+
 /*FORMATOS GENERALES */
 /* LINEA 8 A LA 22 */
 .fondo {
